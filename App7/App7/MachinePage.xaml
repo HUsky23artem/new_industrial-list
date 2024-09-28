@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App7.MachinePage">
+    
+    <StackLayout>
+        <Label Text="Название станка" />
+        <Entry Text="{Binding Name}" />
+        <Label Text="Номер станка" />
+        <Entry Text="{Binding Email}" />
+        <Button Text="pdf файлы" Clicked="OnSelectPdfClicked"/>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Сохранить" Clicked="SaveMachine" />
+            <Button Text="Удалить" Clicked="DeleteMachine" />
+            <Button Text="Отмена" Clicked="Cancel" />
+        </StackLayout>
+    </StackLayout>
+    
+</ContentPage>
